@@ -1,0 +1,605 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Seymour+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+body {
+  font-family: "Courier New", "Courier", "monospace";
+  background-color: rgb(250, 232, 246);
+  margin: 0px;
+}
+h1 {
+  font-family: "Dancing Script", cursive;
+}
+#center {
+  text-align: center;
+}
+.center {
+  display: block;
+  margin-left: 347px;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 80%;
+}
+/*NAVIGATON*/
+#nvg_home {
+  font-family: "Helvetica";
+}
+.bgnav {
+  background-image: linear-gradient(
+    130deg,
+    rgba(52, 56, 55, 1) 40%,
+    rgba(20, 20, 20, 1) 95%
+  );
+}
+table,
+th,
+td {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px;
+}
+nav ul {
+  list-style-type: none;
+  margin-left: 90px;
+  margin-right: 15px;
+  margin-top: -110px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: rgb(52, 56, 55);
+}
+nav li {
+  float: left;
+}
+nav li a {
+  display: block;
+  color: floralwhite;
+  text-align: center;
+  padding: 12px 26px;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: rgb(10, 10, 10);
+}
+#nvg_home ul {
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 10px;
+}
+/*LOGO*/
+#logo {
+  border-style: none;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 80px;
+}
+/*HOME*/
+.container {
+  position: relative;
+}
+#zndout {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center top;
+  border-style: solid;
+  border-width: 3px;
+}
+.title {
+  font-size: 90px;
+  position: absolute;
+  color: #8bcf6b;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #27451a;
+  top: 47%;
+  left: 1%;
+}
+#aboutus {
+  background-color: rgb(232, 221, 213);
+  padding: 20px;
+}
+#homefooter {
+  margin-left: 15px;
+  margin-right: 15px;
+  border-color: gray;
+}
+/*MENU*/
+#menupage {
+  margin-left: 15px;
+}
+#hdflavor {
+  margin-top: -10px;
+}
+#flavors {
+  margin-top: -10px;
+}
+.hovertext {
+  position: relative;
+  border-bottom: 1px dotted black;
+}
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 250px;
+  background-color: rgb(52, 56, 55);
+  color: floralwhite;
+  text-align: center;
+  border-radius: 10px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgb(10, 10, 10);
+  padding: 5px 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+/*FLAVORS*/
+.flavors {
+  border-width: 4px;
+  border-style: solid;
+  padding: 8px;
+  border-radius: 30px;
+  width: 70px;
+  height: 12px;
+}
+#vanilla {
+  border-color: rgb(255, 230, 179);
+  background-color: #ffffdb;
+  border-left: 0px;
+  border-top: -51px;
+}
+#chocolate {
+  width: 86px;
+  color: white;
+  border-color: rgb(53, 12, 0);
+  background-color: rgb(69, 43, 7);
+  margin-top: -51px;
+  margin-left: 100px;
+}
+#butterpecan {
+  width: 120px;
+  margin-top: -51px;
+  margin-left: 215px;
+  border-color: rgb(153, 104, 5);
+  background-color: rgb(214, 194, 152);
+}
+#cookiebutter {
+  width: 125px;
+  margin-top: -51px;
+  margin-left: 363px;
+  border-color: rgb(53, 12, 0);
+  background-color: rgb(69, 43, 7);
+  color: white;
+}
+#cakebatter {
+  width: 106px;
+  margin-top: -51px;
+  margin-left: 517px;
+  border-color: rgb(204, 122, 63);
+  background-color: rgb(194, 112, 35);
+  color: white;
+}
+#coffee {
+  width: 60px;
+  margin-top: -51px;
+  margin-left: 652px;
+  border-color: rgb(130, 67, 21);
+  background-color: rgb(92, 50, 21);
+  color: white;
+}
+#caramelcone {
+  width: 117px;
+  margin-top: -51px;
+  margin-left: 740px;
+  border-color: rgb(170, 95, 41);
+  background-color: rgb(187, 84, 10);
+  color: white;
+}
+#superhero {
+  width: 87px;
+  margin-top: -52px;
+  margin-left: 885px;
+  border-color: rgb(187, 15, 15);
+  background-color: rgb(46, 25, 139);
+  color: white;
+}
+#nutterbutter {
+  width: 130px;
+  margin-top: -52px;
+  margin-left: 1000px;
+  border-color: rgb(107, 46, 5);
+  background-color: rgb(204, 116, 15);
+  color: black;
+}
+#blockytoproad {
+  width: 145px;
+  margin-top: 10px;
+  margin-left: 0px;
+  border-color: rgb(107, 46, 5);
+  background-color: rgb(255, 232, 206);
+  color: black;
+}
+#strawberry {
+  width: 97px;
+  margin-top: -52px;
+  margin-left: 180px;
+  border-color: rgb(21, 85, 5);
+  background-color: rgb(219, 17, 17);
+  color: white;
+}
+#wcrc {
+  width: 75px;
+  margin-top: -52px;
+  margin-left: 310px;
+  border-color: rgb(152, 160, 150);
+  background-color: rgb(122, 11, 11);
+  color: white;
+}
+#chocolateoverload {
+  width: 175px;
+  margin-top: -52px;
+  margin-left: 420px;
+  border-color: rgb(73, 23, 8);
+  background-color: rgb(98, 39, 21);
+  color: white;
+}
+#pralinescream {
+  width: 160px;
+  margin-top: -52px;
+  margin-left: 630px;
+  border-color: rgb(82, 52, 14);
+  background-color: rgb(212, 170, 114);
+  color: black;
+}
+#cccd {
+  width: 260px;
+  margin-top: 10px;
+  margin-left: 0px;
+  border-color: rgb(139, 43, 5);
+  background-color: rgb(75, 27, 5);
+  color: white;
+}
+#blueberrycheesecake {
+  width: 195px;
+  margin-top: -52px;
+  margin-left: 820px;
+  border-color: rgb(11, 63, 112);
+  background-color: rgb(17, 40, 56);
+  color: white;
+}
+#cccd {
+  width: 260px;
+  margin-top: 10px;
+  margin-left: 0px;
+  border-color: rgb(139, 43, 5);
+  background-color: rgb(75, 27, 5);
+  color: rgb(255, 255, 255);
+}
+#tennfudge {
+  width: 150px;
+  margin-top: -51px;
+  margin-left: 290px;
+  border-color: rgb(236, 176, 152);
+  background-color: rgb(105, 42, 13);
+  color: white;
+}
+#saltedcaramel {
+  width: 135px;
+  margin-top: -51px;
+  margin-left: 470px;
+  border-color: rgb(236, 176, 152);
+  background-color: #65350f;
+  color: white;
+}
+#mintchip {
+  width: 87px;
+  margin-top: -51px;
+  margin-left: 635px;
+  border-color: rgb(168, 78, 42);
+  background-color: rgb(133, 223, 98);
+  color: black;
+}
+#redvelvet {
+  width: 97px;
+  margin-top: -51px;
+  margin-left: 755px;
+  border-color: #800000;
+  background-color: rgb(100, 30, 10);
+  color: white;
+}
+#mwcc {
+  width: 262px;
+  margin-top: -51px;
+  margin-left: 883px;
+  border-color: #bbff94;
+  background-color: rgb(247, 189, 154);
+  color: black;
+}
+#orangesherbet {
+  width: 135px;
+  margin-top: -5px;
+  margin-left: 0px;
+  border-color: #ff6e19;
+  background-color: rgb(255, 224, 212);
+  color: black;
+}
+#mbw {
+  width: 193px;
+  margin-top: -52px;
+  margin-left: 165px;
+  border-color: #b44200;
+  background-color: rgb(66, 19, 0);
+  color: white;
+}
+#crt {
+  width: 263px;
+  margin-top: -52px;
+  margin-left: 390px;
+  border-color: #5a1905;
+  background-color: rgb(66, 19, 0);
+  color: white;
+}
+#bananapudding {
+  width: 135px;
+  margin-top: -52px;
+  margin-left: 683px;
+  border-color: rgb(255, 197, 8);
+  background-color: rgb(255, 229, 180);
+  color: black;
+}
+#pbc {
+  width: 168px;
+  margin-top: -52px;
+  margin-left: 850px;
+  border-color: rgb(56, 24, 3);
+  background-color: rgb(104, 51, 9);
+  color: white;
+}
+#cookiesandcream {
+  width: 170px;
+  margin-top: -52px;
+  margin-left: 1045px;
+  border-color: rgb(255, 216, 216);
+  background-color: rgb(36, 22, 12);
+  color: white;
+}
+#loadedbutterscotch {
+  width: 185px;
+  margin-top: 10px;
+  margin-left: 0px;
+  border-color: rgb(143, 62, 9);
+  background-color: rgb(206, 92, 0);
+  color: white;
+}
+#coffeefudge {
+  width: 120px;
+  margin-top: -52px;
+  margin-left: 215px;
+  border-color: #48371c;
+  background-color: rgb(56, 27, 3);
+  color: white;
+}
+#toastedcoconut {
+  width: 135px;
+  margin-top: -52px;
+  margin-left: 365px;
+  border-color: #7a510d;
+  background-color: rgb(235, 182, 140);
+  color: black;
+}
+#tcb {
+  width: 235px;
+  margin-top: -52px;
+  margin-left: 532px;
+  border-color: rgb(66, 30, 5);
+  background-color: rgb(97, 54, 19);
+  color: white;
+}
+#hrp {
+  width: 230px;
+  margin-top: -52px;
+  margin-left: 800px;
+  border-color: rgb(247, 209, 39);
+  background-color: rgb(175, 132, 68);
+  color: black;
+}
+#vvom {
+  width: 245px;
+  margin-top: 10px;
+  margin-left: 0px;
+  border-color: rgb(223, 171, 111);
+  background-color: rgb(236, 217, 187);
+  color: black;
+}
+#strawdaq {
+  width: 204px;
+  margin-top: -52px;
+  margin-left: 278px;
+  border-color: rgb(211, 29, 5);
+  background-color: rgb(255, 191, 95);
+  color: black;
+}
+.spclitem {
+  border-width: 4px;
+  border-style: solid;
+  padding: 8px;
+  border-radius: 30px;
+  width: 70px;
+  height: 12px;
+}
+#ics {
+  width: 185px;
+  margin-top: 10px;
+  margin-left: 0px;
+  border-color: rgb(56, 22, 2);
+  background-color: rgb(255, 231, 198);
+  color: black;
+}
+#nanasplit {
+  width: 120px;
+  margin-top: -51px;
+  margin-left: 215px;
+  border-color: rgb(241, 217, 0);
+  background-color: rgb(255, 214, 156);
+  color: black;
+}
+#sundae {
+  width: 57px;
+  margin-top: -51px;
+  margin-left: 365px;
+  border-color: rgb(195, 30, 30);
+  background-color: rgba(255, 188, 93, 0.514);
+  color: black;
+}
+#shakes {
+  width: 90px;
+  margin-top: -51px;
+  margin-left: 455px;
+  border-color: rgb(195, 30, 30);
+  background-color: rgb(255, 238, 214);
+  color: black;
+}
+/*CONTACT*/
+.contact {
+  border-width: 4px;
+  border-style: solid;
+  padding: 15px;
+  border-radius: 35px;
+  width: 70px;
+  height: 15px;
+}
+#centerp {
+  margin-right: 320px;
+  margin-left: 320px;
+}
+#contactline {
+  margin-left: 15px;
+}
+#contact2 {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  width: 100%;
+  height: 455px;
+  object-fit: cover;
+  object-position: top left;
+  border-style: solid;
+  border-width: 3px;
+}
+#address {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  border-color: black;
+  margin-left: 10px;
+  width: 60px;
+}
+#hours {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  border-color: black;
+  margin-top: -69px;
+  margin-bottom: 40px;
+  margin-left: 130px;
+  width: 50px;
+}
+#facebook {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  border-color: black;
+  margin-top: -93px;
+  margin-left: 250px;
+  width: 70px;
+}
+/*REVIEWS*/
+#revpage {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#revtext {
+  margin-top: 30px;
+}
+#reviewstbl {
+  margin-top: 15px;
+  width: 45%;
+  background-color: white;
+}
+#reviewstbl2 {
+  margin-top: 15px;
+  width: 45%;
+  background-color: white;
+}
+#reviewstbl3 {
+  margin-top: 15px;
+  width: 45%;
+  background-color: white;
+}
+#reviewstbl4 {
+  margin-top: 15px;
+  width: 45%;
+  background-color: white;
+}
+#reviewstbl5 {
+  margin-top: 15px;
+  width: 45%;
+  background-color: white;
+}
+#revfooter {
+  margin-left: 15px;
+  margin-right: 15px;
+  border-color: gray;
+  margin-top: 15px;
+}
+/*HISTORY*/
+.history {
+  border-width: 4px;
+  border-style: solid;
+  padding: 15px;
+  border-radius: 35px;
+  width: 70px;
+  height: 15px;
+}
+#timelinetxt {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+#event1 {
+  width: 148px;
+  margin-top: 60px;
+  margin-left: 500px;
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+#event2 {
+  width: 115px;
+  margin-top: 80px;
+  margin-left: 517px;
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+#event3 {
+  width: 109px;
+  margin-top: 90px;
+  margin-left: 517px;
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+.bghist {
+  background-image: linear-gradient(
+    90deg,
+    rgb(250, 232, 246) 40%,
+    rgb(114, 128, 146) 100%
+  );
+}
